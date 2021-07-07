@@ -34,18 +34,21 @@ body {
 h1,
 h2,
 h3 {
-  color: var(--dark);
-  font-family: Neucha, sans-serif;
-  font-weight: normal;
-  line-height: 1.2em;
   margin: 0;
+
+  color: var(--primary);
+  font-weight: normal;
+  font-family: Neucha, sans-serif;
+  line-height: 1.2em;
 }
 
 h1 {
   position: relative;
-  font-size: 72px;
   z-index: 1;
+
   margin-bottom: 0;
+
+  font-size: 72px;
 }
 
 h2 {
@@ -56,17 +59,24 @@ h3 {
   font-size: 34px;
 }
 
-.subtitle {
-  font-family: Neucha, sans-serif;
+.subtitle-dark {
+  color: var(--transparent-dark);
   font-weight: normal;
   font-size: 24px;
-  color: var(--transparent-dark);
+  font-family: Neucha, sans-serif;
+}
+
+.subtitle-white {
+  color: var(--transparent-white);
+  font-weight: normal;
+  font-size: 24px;
+  font-family: Neucha, sans-serif;
 }
 
 .lead {
-  font-family: Neucha, sans-serif;
   font-weight: normal;
   font-size: 34px;
+  font-family: Neucha, sans-serif;
   line-height: 1.2;
 }
 
@@ -74,47 +84,61 @@ main {
   overflow: hidden;
 }
 
-.background::before {
+.bg-light {
+  background-color: var(--light);
+}
+
+.bg-section-light::before {
+  background-color: var(--light);
+}
+
+.bg::before {
   position: absolute;
   top: 0;
   left: 0;
+
   width: 100%;
-  height: 914px;
+  height: 100%;
+
   content: '';
 }
 
-.background-image::before {
+.bg-image::before {
   background-image: url("../images/background.png");
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 10%;
-  z-index: -2;
 }
 
 section {
   position: relative;
+
   width: 1110px;
   padding: 100px 0;
 }
 
 .image-main {
   position: absolute;
-  height: 525px;
   top: 55px;
   right: -270px;
+
+  height: 525px;
 }
 
-.color-primary {
+.text-primary {
   color: var(--primary);
 }
 
-.background-light {
-  background-color: var(--light);
+.text-dark {
+  color: var(--dark);
 }
 
-.background-light::before {
-  background-color: var(--light);
-  z-index: -3;
+.text-white {
+  color: var(--white);
+}
+
+.text-brown {
+  color: var(--brown);
 }
 
 .columns-2 {
@@ -137,19 +161,21 @@ section {
 .button {
   display: inline-block;
   padding: 12px 24px;
+  border: none;
+
+  color: var(--white);
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
-  border: none;
-  color: var(--white);
+
   background-color: var(--primary);
 }
 
 .button:hover {
-  background-color: #EA7600;
+  background-color: #ea7600;
 }
 
-.background-primary {
+.bg-primary {
   background-color: var(--primary);
 }
 
@@ -185,10 +211,6 @@ section {
   background-color: var(--primary-dark);
 }
 
-.color-white {
-  color: var(--white);
-}
-
 .relative {
   position: relative;
 }
@@ -222,24 +244,27 @@ section {
 }
 
 .width-350 {
-  width: 350px;
   box-sizing: border-box;
+  width: 350px;
 }
 
 .card {
   position: relative;
-  width: 350px;
+
   box-sizing: border-box;
+  width: 350px;
   padding: 24px;
 }
 
 .card:hover {
-  background-color: var(--primary);
   color: var(--white);
+
+  background-color: var(--primary);
 }
 
 .number {
   margin-bottom: 40px;
+
   font-size: 64px;
   font-family: Neucha, sans-serif;
   line-height: 1;
@@ -247,30 +272,38 @@ section {
 
 .card-link {
   display: inline-block;
-  text-decoration: none;
+
   color: var(--primary);
+  text-decoration: none;
 }
 
 .card-link:hover {
   color: var(--white);
 }
 
-.card-link:before {
+.card-link::before {
   position: absolute;
   top: 0;
   left: 0;
+
   width: 100%;
   height: 100%;
+
   content: "";
 }
 
 .img-effect {
   min-width: 578px;
-  filter: drop-shadow(0px 16px 32px rgba(0, 0, 0, 0.15));
+
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
 
 .ml-30 {
   margin-left: 30px;
+}
+
+.mr-30 {
+  margin-right: 30px;
 }
 
 .mt-100 {
@@ -282,12 +315,16 @@ section {
 }
 
 .heading-underlay {
-  font-family: "Open Sans", sans-serif;
-  font-size: 14px;
   font-weight: 700;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
 }
 
 .bg-brown {
+  background-color: var(--brown);
+}
+
+.bg-section-brown::before {
   background-color: var(--brown);
 }
