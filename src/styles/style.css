@@ -150,8 +150,8 @@ h3 {
   margin-top: 0;
 }
 
-.mt-185 {
-  margin-top: 185px;
+.mt-194 {
+  margin-top: 194px;
 }
 
 .break-after {
@@ -223,8 +223,8 @@ h3 {
   left: calc(50% - 919px / 2);
 }
 
-.h-469 {
-  height: 369px;
+.h-375 {
+  height: 375px;
 }
 
 .pt-100 {
@@ -411,3 +411,20 @@ h3 {
 .link-footer {
   color: var(--blue);
 }
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.mt-7 {
+  margin-top: 7px;
+}
+
+.mt-23 {
+  margin-top: 23px;
+}
+
+.mt-5 {
+  margin-top: 5px;
+}
+
