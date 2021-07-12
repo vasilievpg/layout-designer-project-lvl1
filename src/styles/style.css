@@ -59,6 +59,17 @@ h3 {
   font-size: 34px;
 }
 
+.bg-section-brown {
+  background-color: var(--brown);
+}
+
+.bg-image::before {
+  background-image: url("../images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 10%;
+}
+
 .subtitle-dark {
   color: var(--transparent-dark);
   font-weight: normal;
@@ -101,13 +112,6 @@ h3 {
   height: 100%;
 
   content: '';
-}
-
-.bg-image::before {
-  background-image: url("../images/background.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 10%;
 }
 
 .container {
@@ -325,10 +329,6 @@ h3 {
   background-color: var(--brown);
 }
 
-.bg-section-brown::before {
-  background-color: var(--brown);
-}
-
 .p-55 {
   padding: 55px;
 }
@@ -427,4 +427,3 @@ h3 {
 .mt-5 {
   margin-top: 5px;
 }
-
