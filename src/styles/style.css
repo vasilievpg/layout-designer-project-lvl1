@@ -179,6 +179,10 @@ h3 {
   background-color: var(--primary);
 }
 
+.m-0 {
+  margin: 0;
+}
+
 .mt-40 {
   margin-top: 40px;
 }
