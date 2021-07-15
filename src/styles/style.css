@@ -74,21 +74,21 @@ h3 {
   opacity: 10%;
 }
 
-.subtitle-dark {
+h4, .h4 {
+  font-weight: normal;
+  font-size: 24px;
+  font-family: Neucha, sans-serif;
+}
+
+.transparent-dark {
   color: var(--transparent-dark);
-  font-weight: normal;
-  font-size: 24px;
-  font-family: Neucha, sans-serif;
 }
 
-.subtitle-white {
+.transparent-white {
   color: var(--transparent-white);
-  font-weight: normal;
-  font-size: 24px;
-  font-family: Neucha, sans-serif;
 }
 
-.lead {
+h3, .h3 {
   font-weight: normal;
   font-size: 34px;
   font-family: Neucha, sans-serif;
@@ -158,20 +158,23 @@ h3 {
   break-after: column;
 }
 
-.button {
+.btn {
   display: inline-block;
   padding: 12px 24px;
   border: none;
 
-  color: var(--white);
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.btn-primary {
+  color: var(--white);
 
   background-color: var(--primary);
 }
 
-.button:hover {
+.btn:hover {
   background-color: #ea7600;
 }
 
@@ -193,6 +196,23 @@ h3 {
 
 .d-flex {
   display: flex;
+}
+
+.d-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.column-gap-30 {
+  column-gap: 30px;
+}
+
+.row-gap-20 {
+  row-gap: 20px;
+}
+
+.d-block {
+  display: block;
 }
 
 .justify-center {
@@ -257,6 +277,7 @@ h3 {
 
   box-sizing: border-box;
   width: 350px;
+  height: 100%;
   padding: 24px;
 }
 
